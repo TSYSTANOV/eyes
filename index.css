@@ -1,0 +1,94 @@
+*,*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    overflow: hidden;
+    /* background-color: gold; */
+}
+.container
+{
+width: 100%;
+height:100vh;
+background: black;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+z-index: -1;
+}
+.monster
+{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+opacity:0;
+width: 450px;
+height: 150px;
+border-radius:50% 50% 0 0;
+transition: 0.5s;
+}
+.wrap
+{
+    position: relative;
+    background-color: red;
+    width:160px;
+    height:80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid red;
+    z-index: 3;
+    transition: 0.5s;
+}
+.eye
+{
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top:0px;
+    left:0px;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+    z-index: 3;
+    transition: 0.5s;
+}
+.redTouch
+{
+    background-color: red;
+    width:10px;
+    height: 40px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+}
+.blackTouch
+{
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.light
+{
+    position: absolute;
+    z-index: 2;
+    width:100%;
+    height: 100%;
+    background:none;
+    z-index: 1;
+}
